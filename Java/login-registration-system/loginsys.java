@@ -9,23 +9,6 @@ public class Main {
     public static Map<String, String> user_information_dict = new HashMap<>();
 
     public static void main(String[] args) {
-        File f = new File(System.getProperty("user.home"), "user_data.json");
-        user_information_dict = new HashMap<>();
-        try (FileOutputStream fos = new FileOutputStream(f);
-             ObjectOutputStream oos = new ObjectOutputStream(fos);) {
-            oos.writeObject(user_information_dict);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        try (FileInputStream fis = new FileInputStream(f);
-             ObjectInputStream ois = new ObjectInputStream(fis);) {
-            Map<String, String> user_information_dict = (Map<String, String>) ois.readObject();
-            System.out.println(user_information_dict);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        System.out.println(user_information_dict);
         start();
     }
 
