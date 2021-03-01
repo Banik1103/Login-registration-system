@@ -1,1 +1,1 @@
-# This directory includes all of my python projects.
+# This directory includes all of my Python projects.
