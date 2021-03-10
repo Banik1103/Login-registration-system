@@ -70,7 +70,7 @@ def logged_in():
         print("\nUnknown input!")
         logged_in()
 
-# settings menu for logged in users
+# settings menu for logged-in users
 def settings():
     print("\nEnter 'delete' to delete your account.")
     print("Enter 'name' to change the username of your account.")
@@ -96,7 +96,7 @@ def settings():
         print("\nUnknown input!")
         settings()
 
-# the use can delete hsi acoount
+# the user can delete his account
 def delete():
     print("\nDo you really want to delete your account?\n")
     print("If yes, enter 'DELETE'.\n")
